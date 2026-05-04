@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Mehdi BEKHTI — Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(15,23,42,0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #1e293b;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #cbd5f5;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #1e3a8a, #0ea5e9);
+}
+
+.hero span {
+  color: #facc15;
+}
+
+.btn {
+  padding: 10px 18px;
+  margin: 5px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.primary {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.secondary {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.section {
+  padding: 60px 20px;
+}
+
+h2 {
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 20px;
+}
+
+.skill {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.skill img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  background: #0ea5e9;
+}
+
+.slider {
+  margin-top: 10px;
+  height: 30px;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #1e293b;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #38bdf8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <h2>Mehdi BEKHTI</h2>
+    <nav>
+      <a href="#about">Profil</a>
+      <a href="#skills">Compétences</a>
+      <a href="#projects">Projets</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Bonjour, je suis <span>Mehdi BEKHTI</span></h1>
+  <p>Technicien support • BTS SIO</p>
+
+  <a class="btn primary" href="#projects">Voir mes projets</a>
+  <a class="btn secondary" href="#contact">Me contacter</a>
+</section>
+
+<section id="about" class="section container">
+  <h2>À propos</h2>
+  <div class="card">
+    <p><strong>Étudiant en 2ᵉ année de BTS SIO</strong></p>
+    <p><strong>SUEZ</strong></p>
+
+    <p>Stage : découverte du support IT et gestion des incidents.</p>
+    <p>Alternance : support utilisateur, résolution et suivi des tickets.</p>
+
+    <div class="slider">
+      <div class="slide active">SUEZ</div>
+      <div class="slide">Support utilisateurs</div>
+      <div class="slide">Travail en équipe IT</div>
+    </div>
+
+    <a class="link" href="https://1drv.ms/p/c/749ABA3D6E352E98/IQCfXLMGHOIVRoXnwzAIaJJtAcl6LV7geIoNrarCuRTLgJM?e=2cDm8g" target="_blank">
+      Qui sont SUEZ ?
+    </a>
+  </div>
+</section>
+
+<section id="cv" class="section container">
+  <h2>CV</h2>
+  <div class="card" style="text-align:center;">
+    <p>Consultez mon CV</p>
+
+    <a class="btn primary" href="https://1drv.ms/b/c/749ABA3D6E352E98/IQC_B02YE1zcSpKHfUEkNdHeAeYM8uuMM_97-xAftC7jVOg?e=9ALvtn" target="_blank">
+      Voir mon CV
+    </a>
+  </div>
+</section>
+
+<section id="skills" class="section container">
+  <h2>Compétences</h2>
+
+  <div class="grid">
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+      <p>HTML</p>
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+      <p>CSS</p>
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+      <p>JavaScript</p>
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+      <p>Python</p>
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+      <p>SQL</p>
+    </div>
+
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
+      <p>PHP</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section container">
+  <h2>Projets</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Application CRUD</h3>
+      <p>PHP • MySQL • HTML/CSS</p>
+
+      <!-- LIEN IMAGE CRUD -->
+      <a class="link" href="https://1drv.ms/b/c/749ABA3D6E352E98/IQBv7R7kM-KdQYNpKX9Ztsd3Ad7mh8PTwjQdCMsCFgh-AeY?e=DZtNxa" target="_blank">
+        Voir image de l'application
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Veille technologique</h3>
+      <p>Suivi des technologies web</p>
+
+      <a class="link" href="https://1drv.ms/p/c/749ABA3D6E352E98/IQAsURL00zMPTJfTwZWF4g-yAdKaVibeqm4t92Ep-VW2dQU?e=AScjpx" target="_blank">
+        Voir la veille
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="section container">
+  <h2>Contact</h2>
+  <p>Email : <a href="mailto:mehdibekhti29@gmail.com">mehdibekhti29@gmail.com</a></p>
+  <p>LinkedIn :
+    <a href="https://www.linkedin.com/in/mehdi-bekhti-114691290/" target="_blank">
+      Voir mon profil
+    </a>
+  </p>
+</section>
+
+<footer>
+  © <span id="year"></span> Mehdi BEKHTI
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(() => {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}, 2000);
+</script>
+
+</body>
+</html>

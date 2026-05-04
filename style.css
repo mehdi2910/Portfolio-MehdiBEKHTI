@@ -1,0 +1,17 @@
+.skill {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.skill img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  background: #0ea5e9;
+}
